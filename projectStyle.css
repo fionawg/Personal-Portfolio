@@ -28,6 +28,28 @@ footer {
     text-align: center;
 }
   
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    margin-left: 20px;
+    width: 80%;
+    align-items: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+#link {
+    color: rgb(211, 173, 255);
+}
+
+#link:hover {
+    color: rgb(255, 255, 255);
+}
+
 .projects {
     padding-bottom: 140px;
 }
