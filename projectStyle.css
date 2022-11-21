@@ -1,0 +1,142 @@
+* { 
+    margin-left: 0; 
+    padding-left: 0;
+    margin-right: 0; 
+    padding-right: 0;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    position: relative;
+    min-height: 98.4vh;
+}
+
+p, h1, h3 {
+    margin: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    background: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+}
+  
+.projects {
+    padding-bottom: 140px;
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    padding-bottom: 0px;
+}
+
+.footerbar {
+    display: inline-block;
+    margin-top: -10px;
+}
+
+ul.footerbar li {
+    margin: 12px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+ul.footerbar li a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+  
+ul.footerbar {
+    color: rgb(211, 173, 255);
+    align-items: center;
+    display: flex;        
+}
+
+ul.footerbar li a:hover {
+    background-color: rgb(179, 179, 179);
+    color: rgb(50, 38, 70);
+}
+  
+ul.footerbar {
+    height: 60px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#copyright {
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 768px){
+    ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    ul.navbar li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 16px;
+    }
+      
+    ul.navbar li a:hover {
+        background-color: rgb(179, 179, 179);
+        color: rgb(50, 38, 70);
+    }
+    
+    #active {
+        background-color: #e4c2f8;
+    }
+}
+
+@media screen and (min-width: 769px){
+    ul.navbar li {
+        margin: 12px;
+        margin-left: 0px;
+        list-style-type: none;
+    }
+    
+    ul.navbar li a {
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+    }
+      
+    ul.navbar {
+        color: rgb(211, 173, 255);
+        align-items: center;
+        display: flex;        
+    }
+
+    ul.navbar li a:hover {
+        background-color: rgb(179, 179, 179);
+        color: rgb(50, 38, 70);
+    }
+      
+    ul.navbar {
+        height: 60px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #active {
+        background-color: #e4c2f8;
+    }
+}
+
