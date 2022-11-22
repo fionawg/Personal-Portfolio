@@ -46,6 +46,14 @@ table {
     text-align: center;
 }
 
+.link {
+    color: rgb(211, 173, 255);
+}
+
+.link:hover {
+    color: rgb(255, 255, 255);
+}
+
 h1 {
     text-align: center;
 }
