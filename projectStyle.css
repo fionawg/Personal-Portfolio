@@ -1,191 +1,112 @@
-* { 
-    margin-left: 0; 
-    padding-left: 0;
-    margin-right: 0; 
-    padding-right: 0;
-}
-
-body {
-    font-family:'Courier New', Courier, monospace;
-    background-color: rgb(75, 75, 75);
-    color: rgb(255, 255, 255);
-    margin-bottom: 0px;
-    position: relative;
-    min-height: 100vh;
-}
-
-p, h1, h3 {
-    margin: 20px;
-}
-
-table, th, td {
-    border: 1px solid;
-}
-
-img {
-    max-height: 300px;
-    object-fit: cover;
-    max-width: 100%;
-    vertical-align: middle;
-    border-radius: 5px;
-}
-
-.photoGal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;    
-    justify-content: center;
-}
-
-table {
-    margin-top: 50px;
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-}
-
-.projects {
-    padding-bottom: 210px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgb(48, 48, 48);
-    color: white;
-    text-align: center;
-    margin-bottom: 0px;
-}
-  
-.projects {
-    padding-bottom: 140px;
-}
-  
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 140px;
-    padding-bottom: 0px;
-}
-
-.footerbar {
-    display: inline-block;
-    margin-top: -10px;
-}
-
-ul.footerbar li {
-    margin: 12px;
-    margin-left: 0px;
-    list-style-type: none;
-}
-
-ul.footerbar li a {
-    text-decoration: none;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-}
-  
-ul.footerbar {
-    color: rgb(211, 173, 255);
-    align-items: center;
-    display: flex;        
-}
-
-ul.footerbar li a:hover {
-    background-color: rgb(179, 179, 179);
-    color: rgb(50, 38, 70);
-}
-  
-ul.footerbar {
-    height: 60px;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#copyright {
-    margin-top: -10px;
-}
-
-@media screen and (max-width: 768px){
-    ul.navbar {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    ul.navbar li a {
-        display: block;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        text-decoration: none;
-        padding: 14px 16px;
-    }
-      
-    ul.navbar li a:hover {
-        background-color: rgb(179, 179, 179);
-        color: rgb(50, 38, 70);
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="projectStyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="projects">
+        <ul class="navbar">
+            <li><a href="index.html">// home</a></li>
+            <li><a id="active" href="projects.html">// projects</a></li>
+            <li><a href="about.html">// about</a></li>
+            <li><a href="contact.html">// contact</a></li>
+        </ul>
     
-    #active {
-        background-color: #e4c2f8;
-    }
+        <h1>
+            Here you can see some of the projects I've worked on throughout high school.
+        </h1>
 
-    footer {
-        margin-bottom: -10px;
-    }
-    
-    .projects {
-        padding-bottom: 200px;
-    }
+        <div class="photoGal">
+            <div id="1">
+                <img src="/imgs/lgbtq.png" alt="lgbtq website">
+            </div>
+            <div id="2">
+                <img src="/imgs/GPACalc.png" alt="GPA Calculator">
+            </div>
+            <div id="3">
+                <img src="/imgs/news.png" alt="News Aggregator">
+            </div>
+            <div id="4">
+                <img src="/imgs/timesheet.png" alt="Timesheet Keeper">
+            </div>
+        </div>
 
-    table {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Language Used</th>
+                <th>Photo Number</th>
+                <th>Link(s)</th>
+            </tr>
+            <tr>
+                <td>LGBTQ Website (GWC)</td>
+                <td>HTML, CSS, and Javascript</td>
+                <td>1</td>
+                <td>
+                    <a id="link" href="https://fionawg.github.io/LGBTQ/">click me to access website!</a>
+                    </br></br>
+                    <a id="link" href="https://github.com/fionawg/LGBTQ">click me for github link!</a>
+                </td>
+            </tr>
+            <tr>
+                <td>GPA Calculator (APCSA)</td>
+                <td>Java</td>
+                <td>2</td>
+                <td><a id="link" href="https://github.com/fionawg/GPA-Calculator">click me for github link!</a></td>
+            </tr>
+            <tr>
+                <td>News Aggregator for Testing (Biometric Edge Internship)</td>
+                <td>Java</td>
+                <td>3</td>
+                <td>
+                    <a id="link" href="https://github.com/fionawg/News-Aggregator">click me for github link!</a>
+                    </br></br>
+                    <a id="link" href="https://github.com/fionawg/News-Aggregator/blob/main/News.jar?raw=true">click me to download JAR file directly!</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Timesheet Keeper (For Fun)</td>
+                <td>Java</td>
+                <td>4</td>
+                <td><a id="link" href="https://github.com/fionawg/timesheet-keeper">click me for github link!</a></td>
+            </tr>
+          </table>
+    </div>
 
-@media screen and (min-width: 769px){
-    ul.navbar li {
-        margin: 12px;
-        margin-left: 0px;
-        list-style-type: none;
-    }
-    
-    ul.navbar li a {
-        text-decoration: none;
-        padding: 10px;
-        color: rgb(255, 255, 255);
-    }
-      
-    ul.navbar {
-        color: rgb(211, 173, 255);
-        align-items: center;
-        display: flex;        
-    }
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Image</th>
+          <th>Website</th>
+        </tr>
+        <tr>
+          <td>LGBTQ Website (GWC)</td>
+          <td>The Green Img</td>
+          <td><a id="link" href="https://fionawg.github.io/lgbtq/">click me to access website!</a></td>
+        </tr>
+        <tr>
+          <td>GPA Calculator</td>
+          <td>Intellij Img</td>
+          <td><a id="link" href="https://github.com/fionawg/FionaFinalProject">click me for github link!</a></td>
+        </tr>
+      </table>
 
-    ul.navbar li a:hover {
-        background-color: rgb(179, 179, 179);
-        color: rgb(50, 38, 70);
-    }
-      
-    ul.navbar {
-        height: 60px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    #active {
-        background-color: #e4c2f8;
-    }
-
-    table {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+    <footer>
+        <p>
+            That's all on this page! Click another page you would like to see:
+        </p>
+        <ul class="footerbar">
+            <li><a href="index.html">// home</a></li>
+            <li><a href="about.html">// about</a></li>       
+            <li><a href="contact.html">// contact</a></li>
+        </ul>
+        <p id="copyright">
+            &copy; 2022 Fiona Wang - All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
